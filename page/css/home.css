@@ -1,0 +1,88 @@
+
+
+.sub{
+    overflow: hidden;
+  
+    height: 300px;
+    width: 334px;
+    border-radius: 50px;
+     background: #717881;
+     transition: all 1.2s ease-in;
+
+  }
+  .sub:hover{
+    box-shadow:  10px 10px 10px #474c48,
+             -20px -20px 60px #909787;
+             rotate: 5deg;
+  }
+  .main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:70px ;
+    margin-left: 10px;
+  }
+  .right-text{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+  }
+  #text{
+    font-size: 3.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-right: 0.5rem solid #BF0426 ;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 15s steps(15,end) infinite forwards ;
+}
+#text-con{
+  font-size: 1.5rem;
+}
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+}
+
+/* book button */
+button {
+    position: relative;
+    font-size: 1em;
+    padding: 0.7em 1.4em;
+    background-color: #BF0426;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 0.5em;
+    color: #DEDEDE;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  }
+  
+  button::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+  
+  button:hover::before {
+    width: 1.6em;
+    height: 1.6em;
+  }
+  
+  button:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+    transform: translate(0.1em, 0.1em);
+  }
+/* end */
